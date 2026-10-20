@@ -1,0 +1,9 @@
+ILLUSTRATIVE SOURCE — NOT A CLIENT DOCUMENT
+Blackstone Bars | Borrowing base | 20 October 2026
+
+Location label: North Dock Warehouse Annex
+Approved location label: North Dock Warehouse
+Automated checks: totals reconcile; location identity is unresolved.
+Required evidence: verification that these refer to the same approved location,
+or documented approval for a genuine eligibility change.
+The demo control supplies a simulated verification event, not real evidence.
