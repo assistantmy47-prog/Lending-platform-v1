@@ -1,40 +1,49 @@
 # Lending Platform V1
 
-A first-version UX mock-up for an exception-led commodity lending platform.
+A portable, modular UI prototype for an exception-led commodity lending platform.
+White/light surfaces, deep gold accents and a chronological decision feed.
+All transactions, source material and actions are illustrative.
 
-The product converts unstructured deal information into structured facts, approved operating instructions, automated activity, prepared human decisions and reusable process improvements.
+## Run
 
-## Product direction
+Requires Node.js 20+ (22+ recommended). No external packages or installation needed.
 
-The primary experience is a **personal feed of decisions and material changes**, supported by shared cases. It should not begin with a dashboard or a list of deals.
+```sh
+git clone https://github.com/assistantmy47-prog/Lending-platform-v1.git
+cd Lending-platform-v1
+npm start
+```
 
-The platform should identify when a person's judgement is required, explain why the matter deserves attention and provide the minimum context needed to act. Detailed evidence and full case history remain available when required.
+Open http://localhost:4173. Downloading the repository ZIP also works; run the commands
+from the extracted folder. ES modules require HTTP serving, not file://.
 
-## Primary roles
+```sh
+npm test
+npm run build
+```
 
-- **Trader / originator** — establishes commercial intent, prepares the term sheet and manages the client relationship and material commercial choices.
-- **Operations** — structures the deal internally from the executed agreement and manages daily servicing and operational exceptions.
-- **Middle Office** — maintains confirmations, reconciliations, internal reporting and payment-related information.
+`dist/` contains a portable static build. No credentials or platform-specific service is required.
 
-Legal and Credit participate through relevant dependencies and approval paths.
+## Explore
 
-## Canonical V1 transaction
+Switch between Operations, Trader / originator and Middle Office. Review a feed item,
+open its evidence or deal, and record a decision. Use Demo controls for incoming evidence
+and payment-result simulation. Decisions persist in this browser. Export/import progress
+from Demo controls to continue the same demo state on another computer.
 
-The first mock-up uses **Blackstone Bars**, an agented syndicated facility in which the bank acts as issuing bank.
+The first slice includes watched deals, purpose-specific case views, source links,
+L1–L4 model navigation, a requirements quick view, insights, similarities and rule proposals.
+Known limitations and remaining work are explicit in the handover.
 
-- Revolver and letter-of-credit facilities are available.
-- Collateral is managed through a borrowing base.
-- Repayments are more common than drawdowns, although both occur.
-- Deal setup, borrowing-base receipt, drawdown and repayment provide the first end-to-end scenarios.
+## Continue development
 
-## Documentation
-
+- [Handover and next steps](docs/HANDOVER.md)
+- [Adding examples](docs/ADDING-EXAMPLES.md)
 - [Product vision](docs/product-vision.md)
 - [Decision feed model](docs/decision-feed-model.md)
 - [Blackstone Bars judgement catalogue](docs/blackstone-bars-judgement-catalogue.md)
-- [V1 mock-up scope](docs/v1-scope.md)
-- [Platform requirements register](docs/requirements.md)
+- [V1 scope](docs/v1-scope.md)
+- [Requirements register](docs/requirements.md)
 
-## Status
-
-Concept definition and scenario modelling.
+Scenario fixtures, state transitions, components and presentation styles are separate
+modules. See AGENTS.md for project constraints when continuing with a coding assistant.
