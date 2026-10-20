@@ -33,6 +33,7 @@ The first mock-up uses **Blackstone Bars**, an agented syndicated facility in wh
 - [Decision feed model](docs/decision-feed-model.md)
 - [Blackstone Bars judgement catalogue](docs/blackstone-bars-judgement-catalogue.md)
 - [V1 mock-up scope](docs/v1-scope.md)
+- [Platform requirements register](docs/requirements.md)
 
 ## Status
 
